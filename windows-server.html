@@ -19,7 +19,12 @@
       installed and configured on a windows server running in a VirtualBox VM.
     </p>
     <h2>DHCP</h2>
-    <p>I added a scope with the range 172.16.0.100-172.16.0.200</p>
+    <p>I added a scope with the range 172.16.0.100-172.16.0.200<br>I left the lease duration as the default but I recognise that you would want a shorter one when assigning IP addresses to guests on a free wifi network and a longer lease for staff computers and printers.</p>
     <img src="images/Windows-Server/DHCP1-New Scope.PNG" alt="The New Scope Wizard with the IP range entered" width="878" height="600">
+    <p>I confirmed that it was set up correctly by adding a windows 10 client machine to the domain.<br>It was assigned 172.16.0.100 by DHCP.</p>
+    <img src="images/Windows-Server/DHCP-Address-Lease-Client1.PNG" alt="DHCP Address Leases" width="852" height="302">
+    <h2>Active Directory</h2>
+    <p>I created organisational units and added new users to them.</p>
+    <img src="images/Windows-Server/Active-Directory-Scranton-OU.PNG" alt="Active-Directory-Organisational Units" width="532" height="343">
   </body>
 </html>
